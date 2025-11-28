@@ -41,11 +41,11 @@ redis-cli
 #  3) CRUD Redis par type de données
 
 ### 3.1 STRINGS
-SET key "value"    &emsp;  # C <br>
-GET key             &emsp; # R <br>
-SET key "new"       &emsp; # U <br>
-DEL key            &emsp;  # D <br>
-INCR count        &emsp;   # compteur auto <br>
+SET key "value"      # C <br>
+GET key              # R <br>
+SET key "new"        # U <br>
+DEL key              # D <br>
+INCR count           # compteur auto <br>
 
 ---
 
