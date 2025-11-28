@@ -71,31 +71,36 @@ SREM skills "redis"                 # D <br>
 ---
 
 ### 3.4 SORTED SETS (triés)
+```bash
 ZADD rank 200 "hamza"               # C <br>
 ZRANGE rank 0 -1 WITHSCORES         # R <br>
 ZINCRBY rank 50 "hamza"             # U <br>
 ZREM rank "hamza"                   # D <br>
-
+```
 ---
 
 ### 3.5 HASHES (objet JSON-like)
+```bash
 HSET user:1 name "Hamza" age 22      # C <br>
 HGETALL user:1                      # R <br>
 HSET user:1 age 23                  # U <br>
 DEL user:1                          # D <br>
-
+```
 ---
 
 # 4) Features avancées
 
 ### Expiration TTL
+```bash
 SET token "ABC" <br>
 EXPIRE token 60 <br>
 TTL token
-
+```
 ### Pub/Sub
+```bash
 SUBSCRIBE news <br>
 PUBLISH news "nouveau message" 
+```
 
 ### Performance
 latence = nanosecondes <br>
