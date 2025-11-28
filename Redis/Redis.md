@@ -41,87 +41,73 @@ redis-cli
 #  3) CRUD Redis par type de données
 
 ### 3.1 STRINGS
-SET key "value"      # C
-GET key              # R
-SET key "new"        # U
-DEL key              # D
-INCR count           # compteur auto
+SET key "value"      # C <br>
+GET key              # R <br>
+SET key "new"        # U <br>
+DEL key              # D <br>
+INCR count           # compteur auto <br>
 
 ---
 
 ### 3.2 LISTS
-RPUSH queue "A"      # C
-LRANGE queue 0 -1    # R
-LSET queue 0 "X"     # U
-LPOP queue           # D (suppr début)
-RPOP queue           # D (suppr fin)
+RPUSH queue "A"      # C <br>
+LRANGE queue 0 -1    # R <br>
+LSET queue 0 "X"     # U <br>
+LPOP queue           # D (suppr début) <br>
+RPOP queue           # D (suppr fin) <br>
 
 ---
 
 ### 3.3 SETS (sans doublons)
-SADD skills "redis" "nosql"         # C
-SMEMBERS skills                     # R
-SADD skills "cache"                 # U
-SREM skills "redis"                 # D
+SADD skills "redis" "nosql"         # C <br>
+SMEMBERS skills                     # R <br>
+SADD skills "cache"                 # U <br>
+SREM skills "redis"                 # D <br>
 
 ---
 
 ### 3.4 SORTED SETS (triés)
-ZADD rank 200 "hamza"               # C
-ZRANGE rank 0 -1 WITHSCORES         # R
-ZINCRBY rank 50 "hamza"             # U
-ZREM rank "hamza"                   # D
+ZADD rank 200 "hamza"               # C <br>
+ZRANGE rank 0 -1 WITHSCORES         # R <br>
+ZINCRBY rank 50 "hamza"             # U <br>
+ZREM rank "hamza"                   # D <br>
 
 ---
 
 ### 3.5 HASHES (objet JSON-like)
-HSET user:1 name "Hamza" age 22     # C
-HGETALL user:1                      # R
-HSET user:1 age 23                  # U
-DEL user:1                          # D
+HSET user:1 name "Hamza" age 22     # C <br>
+HGETALL user:1                      # R <br>
+HSET user:1 age 23                  # U <br>
+DEL user:1                          # D <br>
 
 ---
 
 # 4) Features avancées
 
 ### Expiration TTL
-SET token "ABC"
-EXPIRE token 60
+SET token "ABC" <br>
+EXPIRE token 60 <br>
 TTL token
 
 ### Pub/Sub
-SUBSCRIBE news
-PUBLISH news "nouveau message"
+SUBSCRIBE news <br>
+PUBLISH news "nouveau message" 
 
 ### Performance
-latence = nanosecondes
-débit ≈ 4GB/s
+latence = nanosecondes <br>
+débit ≈ 4GB/s <br>
 RAM native
 
 ---
 
 #  5) Cas d’usage
-- cache API et requêtes lourdes
-- sessions utilisateur / tokens
-- messagerie temps réel (pub/sub)
-- leaderboard / classements
-- analytics en live
-- microservices haute charge
+- cache API et requêtes lourdes <br>
+- sessions utilisateur / tokens <br>
+- messagerie temps réel (pub/sub) <br> 
+- leaderboard / classements <br>
+- analytics en live <br>
+- microservices haute charge <br>
 
-Services qui l’utilisent : Netflix · Twitch · GitHub · Pinterest · StackOverflow
 
 ---
-
-#  6) Ajouter un sous-dossier Git
-
-mkdir backend/
-git add .
-git commit -m "Ajout sous-repertoire"
-git push
-
-# dossier vide => ajouter un marqueur
-touch backend/.gitkeep
-git add .
-git commit -m "Init dossier vide"
-git push
 
