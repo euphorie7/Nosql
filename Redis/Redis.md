@@ -2,9 +2,9 @@
 
 ##  1) NoSQL — Définition
 NoSQL = "Not Only SQL"
-✔ base non relationnelle
-✔ flexible, rapide, scalable
-✔ données semi-structurées
+- base non relationnelle
+- flexible, rapide, scalable
+- données semi-structurées
 
 ### Points forts
 - pas de schéma figé
