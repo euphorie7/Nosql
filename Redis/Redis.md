@@ -26,10 +26,13 @@ NoSQL = "Not Only SQL"
 #  2) Redis — Base NoSQL in-memory
 
 Redis = stockage clé-valeur rapide
-→ sert de cache, base DB, broker, file d’attente
+→ sert de cache,
+→ base DB,
+→ broker,
+→ file d’attente
 
 ### Installation Linux
-sudo apt install redis-server
+sudo apt install redis-server \n
 sudo systemctl start redis-server
 redis-cli
 
