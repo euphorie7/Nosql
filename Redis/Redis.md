@@ -41,11 +41,11 @@ redis-cli
 #  3) CRUD Redis par type de données
 
 ### 3.1 STRINGS
-SET key "value"      # C <br>
-GET key              # R <br>
-SET key "new"        # U <br>
-DEL key              # D <br>
-INCR count           # compteur auto <br>
+SET key "value"    &emsp;  # C <br>
+GET key             &emsp; # R <br>
+SET key "new"       &emsp; # U <br>
+DEL key            &emsp;  # D <br>
+INCR count        &emsp;   # compteur auto <br>
 
 ---
 
@@ -75,7 +75,7 @@ ZREM rank "hamza"                   # D <br>
 ---
 
 ### 3.5 HASHES (objet JSON-like)
-HSET user:1 name "Hamza" age 22     # C <br>
+HSET user:1 name "Hamza" age 22      # C <br>
 HGETALL user:1                      # R <br>
 HSET user:1 age 23                  # U <br>
 DEL user:1                          # D <br>
