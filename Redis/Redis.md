@@ -42,49 +42,49 @@ redis-cli
 
 ### 3.1 STRINGS
 ```bash
-SET key "value"      # C <br>
-GET key              # R <br>
-SET key "new"        # U <br>
-DEL key              # D <br>
-INCR count           # compteur auto <br>
+SET key "value"      # C 
+GET key              # R 
+SET key "new"        # U 
+DEL key              # D 
+INCR count           # compteur auto 
 ```
 ---
 
 ### 3.2 LISTS
 
 ```bash
-RPUSH queue "A"      # C <br>
-LRANGE queue 0 -1    # R <br>
-LSET queue 0 "X"     # U <br>
-LPOP queue           # D (suppr début) <br>
-RPOP queue           # D (suppr fin) <br>
+RPUSH queue "A"      # C 
+LRANGE queue 0 -1    # R 
+LSET queue 0 "X"     # U 
+LPOP queue           # D (suppr début) 
+RPOP queue           # D (suppr fin) 
 ```
 ---
 
 ### 3.3 SETS (sans doublons)
 ```bash
-SADD skills "redis" "nosql"         # C <br>
-SMEMBERS skills                     # R <br>
-SADD skills "cache"                 # U <br>
-SREM skills "redis"                 # D <br>
+SADD skills "redis" "nosql"         # C 
+SMEMBERS skills                     # R 
+SADD skills "cache"                 # U 
+SREM skills "redis"                 # D 
 ```
 ---
 
 ### 3.4 SORTED SETS (triés)
 ```bash
-ZADD rank 200 "hamza"               # C <br>
-ZRANGE rank 0 -1 WITHSCORES         # R <br>
-ZINCRBY rank 50 "hamza"             # U <br>
-ZREM rank "hamza"                   # D <br>
+ZADD rank 200 "hamza"               # C 
+ZRANGE rank 0 -1 WITHSCORES         # R 
+ZINCRBY rank 50 "hamza"             # U 
+ZREM rank "hamza"                   # D 
 ```
 ---
 
 ### 3.5 HASHES (objet JSON-like)
 ```bash
-HSET user:1 name "Hamza" age 22      # C <br>
-HGETALL user:1                      # R <br>
-HSET user:1 age 23                  # U <br>
-DEL user:1                          # D <br>
+HSET user:1 name "Hamza" age 22     # C 
+HGETALL user:1                      # R 
+HSET user:1 age 23                  # U 
+DEL user:1                          # D 
 ```
 ---
 
@@ -92,13 +92,13 @@ DEL user:1                          # D <br>
 
 ### Expiration TTL
 ```bash
-SET token "ABC" <br>
-EXPIRE token 60 <br>
+SET token "ABC" 
+EXPIRE token 60 
 TTL token
 ```
 ### Pub/Sub
 ```bash
-SUBSCRIBE news <br>
+SUBSCRIBE news 
 PUBLISH news "nouveau message" 
 ```
 
