@@ -41,6 +41,7 @@ redis-cli
 #  3) CRUD Redis par type de données
 
 ### 3.1 STRINGS
+``bash
 SET key "value"      # C <br>
 GET key              # R <br>
 SET key "new"        # U <br>
@@ -50,6 +51,7 @@ INCR count           # compteur auto <br>
 ---
 
 ### 3.2 LISTS
+``bash
 RPUSH queue "A"      # C <br>
 LRANGE queue 0 -1    # R <br>
 LSET queue 0 "X"     # U <br>
@@ -59,6 +61,7 @@ RPOP queue           # D (suppr fin) <br>
 ---
 
 ### 3.3 SETS (sans doublons)
+``bash
 SADD skills "redis" "nosql"         # C <br>
 SMEMBERS skills                     # R <br>
 SADD skills "cache"                 # U <br>
