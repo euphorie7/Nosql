@@ -87,4 +87,6 @@ db.lesfilms.find({ acteurs: "Leonardo DiCaprio", annee: 1997 })
 ```js
 db.lesfilms.find({ $or: [ { acteurs: "Leonardo DiCaprio" }, { annee: 1997 } ] })
 ```
+## Conclusion
+L’ensemble de ces requêtes offre une base solide pour parcourir et analyser la collection `lesfilms`. Elles permettent à la fois de filtrer des données, d’afficher sélectivement certains champs, d’examiner la structure des documents et de répondre à des besoins de recherche précis. Ce guide constitue ainsi un support clair pour maîtriser progressivement l’interrogation d’une base MongoDB.
 
