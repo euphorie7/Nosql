@@ -1,4 +1,4 @@
-# TP3 – Réplication MongoDB
+# TP2 – Réplication MongoDB
 
 ## Informations générales
 
