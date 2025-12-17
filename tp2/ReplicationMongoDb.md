@@ -288,17 +288,9 @@ Les données seraient **écrasées** par la réplication.
 
 ---
 
-## 6. Graphiques (à insérer si hébergés)
 
-### 📊 Retard de réplication
-![Retard de réplication](replication_lag.png)
 
-### ⚡ Temps d’élection
-![Temps d'élection](election_time.png)
-
----
-
-## 7. Conclusion
+## Conclusion
 
 Ce TP nous a permis de :
 - Créer un cluster MongoDB avec Docker
