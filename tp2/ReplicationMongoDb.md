@@ -62,7 +62,7 @@ rs.initiate({
     { _id: 2, host: "host:27019" }
   ]
 })
-
+```
 ### Question 9 : Ajouter un nœud
 ```javascript
 rs.add("host:27020")
