@@ -252,5 +252,4 @@ db.movies.mapReduce(
 
 Ce TP nous a permis d’explorer le **modèle MapReduce** dans MongoDB à travers des cas concrets.  
 Nous avons appris à structurer des traitements distribués en deux étapes (Map et Reduce) pour analyser efficacement de grandes collections.  
-Bien que MapReduce soit aujourd’hui souvent remplacé par les pipelines d’agrégation pour des raisons de performance, il constitue une **excellente base pédagogique** pour comprendre les fondements du calcul distribué.
 
